@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <locale.h>
 
 void result(int array[], int tamanho,int *pontos)
 {
@@ -24,6 +25,7 @@ int main()
 {
     int pc = 0, eu = 0, res, myNumbers[4], pcNumbers[4];
     srand(time(NULL));
+    setlocale(LC_ALL,"Portuguese");
 
     for (int i = 0; i < 2; i++)
     {
